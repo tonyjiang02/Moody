@@ -10,11 +10,12 @@ import FirebaseAuth
 struct ContentView: View {
     var body: some View {
         Group{
-            if Auth.auth().currentUser != nil {
-                HomeView()
-            } else {
-                LoginView()
-            }
+            HomeView()
+//            if Auth.auth().currentUser != nil {
+//                HomeView()
+//            } else {
+//                LoginView()
+//            }
         }
     }
 }

@@ -22,6 +22,21 @@
 		041FD28B280BF29B003BE7A3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 041FD28A280BF29B003BE7A3 /* FirebaseStorage */; };
 		041FD28D280BF34C003BE7A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 041FD28C280BF34C003BE7A3 /* GoogleService-Info.plist */; };
 		041FD28F280BFA6A003BE7A3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD28E280BFA6A003BE7A3 /* CustomTextField.swift */; };
+		041FD299280C1298003BE7A3 /* Camera-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 041FD298280C1298003BE7A3 /* Camera-SwiftUI */; };
+		041FD2A4280C26CC003BE7A3 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD29C280C26CB003BE7A3 /* ImageResizer.swift */; };
+		041FD2A6280C26CC003BE7A3 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD29E280C26CC003BE7A3 /* CameraService.swift */; };
+		041FD2A7280C26CC003BE7A3 /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD29F280C26CC003BE7A3 /* PhotoCaptureProcessor.swift */; };
+		041FD2A8280C26CC003BE7A3 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD2A0280C26CC003BE7A3 /* CameraPreview.swift */; };
+		041FD2A9280C26CC003BE7A3 /* CameraService+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD2A1280C26CC003BE7A3 /* CameraService+Enums.swift */; };
+		041FD2AB280C26CC003BE7A3 /* CameraService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD2A3280C26CC003BE7A3 /* CameraService+Extensions.swift */; };
+		041FD2AD280C2FD2003BE7A3 /* FriendsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD2AC280C2FD2003BE7A3 /* FriendsList.swift */; };
+		041FD2B5280C3D66003BE7A3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041FD2B4280C3D66003BE7A3 /* WidgetKit.framework */; };
+		041FD2B7280C3D66003BE7A3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041FD2B6280C3D66003BE7A3 /* SwiftUI.framework */; };
+		041FD2BA280C3D66003BE7A3 /* MoodyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041FD2B9280C3D66003BE7A3 /* MoodyWidget.swift */; };
+		041FD2BD280C3D6A003BE7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041FD2BC280C3D6A003BE7A3 /* Assets.xcassets */; };
+		041FD2BF280C3D6A003BE7A3 /* MoodyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 041FD2BB280C3D66003BE7A3 /* MoodyWidget.intentdefinition */; };
+		041FD2C0280C3D6A003BE7A3 /* MoodyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 041FD2BB280C3D66003BE7A3 /* MoodyWidget.intentdefinition */; };
+		041FD2C3280C3D6A003BE7A3 /* MoodyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 041FD2B2280C3D66003BE7A3 /* MoodyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +54,28 @@
 			remoteGlobalIDString = 041FD251280BF077003BE7A3;
 			remoteInfo = Moody;
 		};
+		041FD2C1280C3D6A003BE7A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041FD24A280BF077003BE7A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041FD2B1280C3D66003BE7A3;
+			remoteInfo = MoodyWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		041FD2C7280C3D6A003BE7A3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				041FD2C3280C3D6A003BE7A3 /* MoodyWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		041FD252280BF077003BE7A3 /* Moody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moody.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +92,20 @@
 		041FD281280BF0C0003BE7A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		041FD28C280BF34C003BE7A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		041FD28E280BFA6A003BE7A3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		041FD29C280C26CB003BE7A3 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		041FD29E280C26CC003BE7A3 /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraService.swift; path = ../../../../Downloads/SwiftCamera/SwiftCamera/CameraService.swift; sourceTree = "<group>"; };
+		041FD29F280C26CC003BE7A3 /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		041FD2A0280C26CC003BE7A3 /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		041FD2A1280C26CC003BE7A3 /* CameraService+Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Enums.swift"; sourceTree = "<group>"; };
+		041FD2A3280C26CC003BE7A3 /* CameraService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Extensions.swift"; sourceTree = "<group>"; };
+		041FD2AC280C2FD2003BE7A3 /* FriendsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsList.swift; sourceTree = "<group>"; };
+		041FD2B2280C3D66003BE7A3 /* MoodyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoodyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		041FD2B4280C3D66003BE7A3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		041FD2B6280C3D66003BE7A3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		041FD2B9280C3D66003BE7A3 /* MoodyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodyWidget.swift; sourceTree = "<group>"; };
+		041FD2BB280C3D66003BE7A3 /* MoodyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MoodyWidget.intentdefinition; sourceTree = "<group>"; };
+		041FD2BC280C3D6A003BE7A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041FD2BE280C3D6A003BE7A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +117,7 @@
 				041FD28B280BF29B003BE7A3 /* FirebaseStorage in Frameworks */,
 				041FD287280BF29B003BE7A3 /* FirebaseAuth in Frameworks */,
 				041FD289280BF29B003BE7A3 /* FirebaseFirestore in Frameworks */,
+				041FD299280C1298003BE7A3 /* Camera-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +135,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		041FD2AF280C3D66003BE7A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041FD2B7280C3D66003BE7A3 /* SwiftUI.framework in Frameworks */,
+				041FD2B5280C3D66003BE7A3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +153,8 @@
 				041FD254280BF077003BE7A3 /* Moody */,
 				041FD265280BF079003BE7A3 /* MoodyTests */,
 				041FD26F280BF079003BE7A3 /* MoodyUITests */,
+				041FD2B8280C3D66003BE7A3 /* MoodyWidget */,
+				041FD2B3280C3D66003BE7A3 /* Frameworks */,
 				041FD253280BF077003BE7A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +165,7 @@
 				041FD252280BF077003BE7A3 /* Moody.app */,
 				041FD262280BF079003BE7A3 /* MoodyTests.xctest */,
 				041FD26C280BF079003BE7A3 /* MoodyUITests.xctest */,
+				041FD2B2280C3D66003BE7A3 /* MoodyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,10 +175,17 @@
 			children = (
 				041FD28C280BF34C003BE7A3 /* GoogleService-Info.plist */,
 				041FD255280BF077003BE7A3 /* MoodyApp.swift */,
+				041FD2A0280C26CC003BE7A3 /* CameraPreview.swift */,
+				041FD29E280C26CC003BE7A3 /* CameraService.swift */,
+				041FD2A1280C26CC003BE7A3 /* CameraService+Enums.swift */,
+				041FD2A3280C26CC003BE7A3 /* CameraService+Extensions.swift */,
 				041FD257280BF077003BE7A3 /* ContentView.swift */,
+				041FD29C280C26CB003BE7A3 /* ImageResizer.swift */,
+				041FD29F280C26CC003BE7A3 /* PhotoCaptureProcessor.swift */,
 				041FD27F280BF0AB003BE7A3 /* LoginView.swift */,
 				041FD28E280BFA6A003BE7A3 /* CustomTextField.swift */,
 				041FD281280BF0C0003BE7A3 /* HomeView.swift */,
+				041FD2AC280C2FD2003BE7A3 /* FriendsList.swift */,
 				041FD259280BF079003BE7A3 /* Assets.xcassets */,
 				041FD25B280BF079003BE7A3 /* Preview Content */,
 			);
@@ -147,6 +217,26 @@
 			path = MoodyUITests;
 			sourceTree = "<group>";
 		};
+		041FD2B3280C3D66003BE7A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041FD2B4280C3D66003BE7A3 /* WidgetKit.framework */,
+				041FD2B6280C3D66003BE7A3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		041FD2B8280C3D66003BE7A3 /* MoodyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				041FD2B9280C3D66003BE7A3 /* MoodyWidget.swift */,
+				041FD2BB280C3D66003BE7A3 /* MoodyWidget.intentdefinition */,
+				041FD2BC280C3D6A003BE7A3 /* Assets.xcassets */,
+				041FD2BE280C3D6A003BE7A3 /* Info.plist */,
+			);
+			path = MoodyWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,10 +247,12 @@
 				041FD24E280BF077003BE7A3 /* Sources */,
 				041FD24F280BF077003BE7A3 /* Frameworks */,
 				041FD250280BF077003BE7A3 /* Resources */,
+				041FD2C7280C3D6A003BE7A3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				041FD2C2280C3D6A003BE7A3 /* PBXTargetDependency */,
 			);
 			name = Moody;
 			packageProductDependencies = (
@@ -168,6 +260,7 @@
 				041FD286280BF29B003BE7A3 /* FirebaseAuth */,
 				041FD288280BF29B003BE7A3 /* FirebaseFirestore */,
 				041FD28A280BF29B003BE7A3 /* FirebaseStorage */,
+				041FD298280C1298003BE7A3 /* Camera-SwiftUI */,
 			);
 			productName = Moody;
 			productReference = 041FD252280BF077003BE7A3 /* Moody.app */;
@@ -209,6 +302,23 @@
 			productReference = 041FD26C280BF079003BE7A3 /* MoodyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		041FD2B1280C3D66003BE7A3 /* MoodyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041FD2C4280C3D6A003BE7A3 /* Build configuration list for PBXNativeTarget "MoodyWidgetExtension" */;
+			buildPhases = (
+				041FD2AE280C3D66003BE7A3 /* Sources */,
+				041FD2AF280C3D66003BE7A3 /* Frameworks */,
+				041FD2B0280C3D66003BE7A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodyWidgetExtension;
+			productName = MoodyWidgetExtension;
+			productReference = 041FD2B2280C3D66003BE7A3 /* MoodyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,6 +340,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = 041FD251280BF077003BE7A3;
 					};
+					041FD2B1280C3D66003BE7A3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 041FD24D280BF077003BE7A3 /* Build configuration list for PBXProject "Moody" */;
@@ -243,6 +356,7 @@
 			mainGroup = 041FD249280BF077003BE7A3;
 			packageReferences = (
 				041FD283280BF29B003BE7A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				041FD297280C1297003BE7A3 /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */,
 			);
 			productRefGroup = 041FD253280BF077003BE7A3 /* Products */;
 			projectDirPath = "";
@@ -251,6 +365,7 @@
 				041FD251280BF077003BE7A3 /* Moody */,
 				041FD261280BF079003BE7A3 /* MoodyTests */,
 				041FD26B280BF079003BE7A3 /* MoodyUITests */,
+				041FD2B1280C3D66003BE7A3 /* MoodyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -280,6 +395,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		041FD2B0280C3D66003BE7A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041FD2BD280C3D6A003BE7A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -287,11 +410,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041FD2A7280C26CC003BE7A3 /* PhotoCaptureProcessor.swift in Sources */,
+				041FD2A6280C26CC003BE7A3 /* CameraService.swift in Sources */,
 				041FD280280BF0AB003BE7A3 /* LoginView.swift in Sources */,
+				041FD2C0280C3D6A003BE7A3 /* MoodyWidget.intentdefinition in Sources */,
+				041FD2AB280C26CC003BE7A3 /* CameraService+Extensions.swift in Sources */,
 				041FD282280BF0C0003BE7A3 /* HomeView.swift in Sources */,
+				041FD2A9280C26CC003BE7A3 /* CameraService+Enums.swift in Sources */,
 				041FD258280BF077003BE7A3 /* ContentView.swift in Sources */,
 				041FD256280BF077003BE7A3 /* MoodyApp.swift in Sources */,
+				041FD2A4280C26CC003BE7A3 /* ImageResizer.swift in Sources */,
 				041FD28F280BFA6A003BE7A3 /* CustomTextField.swift in Sources */,
+				041FD2A8280C26CC003BE7A3 /* CameraPreview.swift in Sources */,
+				041FD2AD280C2FD2003BE7A3 /* FriendsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +443,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		041FD2AE280C3D66003BE7A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041FD2BA280C3D66003BE7A3 /* MoodyWidget.swift in Sources */,
+				041FD2BF280C3D6A003BE7A3 /* MoodyWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -324,6 +464,11 @@
 			isa = PBXTargetDependency;
 			target = 041FD251280BF077003BE7A3 /* Moody */;
 			targetProxy = 041FD26D280BF079003BE7A3 /* PBXContainerItemProxy */;
+		};
+		041FD2C2280C3D6A003BE7A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041FD2B1280C3D66003BE7A3 /* MoodyWidgetExtension */;
+			targetProxy = 041FD2C1280C3D6A003BE7A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -447,6 +592,7 @@
 		041FD277280BF079003BE7A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +601,9 @@
 				DEVELOPMENT_TEAM = 5W3VHN46BQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need photo library access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -476,6 +625,7 @@
 		041FD278280BF079003BE7A3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +634,9 @@
 				DEVELOPMENT_TEAM = 5W3VHN46BQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is needed";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to add photos";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need photo library access";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -578,6 +731,60 @@
 			};
 			name = Release;
 		};
+		041FD2C5280C3D6A003BE7A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonyjiang02.Moody.MoodyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041FD2C6280C3D6A003BE7A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5W3VHN46BQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonyjiang02.Moody.MoodyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -617,6 +824,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		041FD2C4280C3D6A003BE7A3 /* Build configuration list for PBXNativeTarget "MoodyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041FD2C5280C3D6A003BE7A3 /* Debug */,
+				041FD2C6280C3D6A003BE7A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -626,6 +842,14 @@
 			requirement = {
 				branch = master;
 				kind = branch;
+			};
+		};
+		041FD297280C1297003BE7A3 /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rorodriguez116/Camera-SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -650,6 +874,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 041FD283280BF29B003BE7A3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		041FD298280C1298003BE7A3 /* Camera-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 041FD297280C1297003BE7A3 /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */;
+			productName = "Camera-SwiftUI";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

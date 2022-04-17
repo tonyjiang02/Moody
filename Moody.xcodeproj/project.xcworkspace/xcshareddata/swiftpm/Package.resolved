@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "Camera-SwiftUI",
+        "repositoryURL": "https://github.com/rorodriguez116/Camera-SwiftUI.git",
+        "state": {
+          "branch": null,
+          "revision": "bec647c47f45cdfd588dd50e07571fb2642f4575",
+          "version": "0.0.5"
+        }
+      },
+      {
         "package": "Firebase",
         "repositoryURL": "https://github.com/firebase/firebase-ios-sdk",
         "state": {
